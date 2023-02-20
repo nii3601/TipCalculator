@@ -22,7 +22,7 @@ export default function RootLayout({
       <head />
       <body>
         {children}
-        <footer className='flex flex-row items-center justify-center text-white bg-slate-900 py-2'>Made with NextJS by Jonathan Lamptey</footer>
+        <footer className='flex flex-row items-center justify-center text-white bg-slate-900 py-4'>Made with NextJS by Jonathan Lamptey</footer>
       </body>
     </html>
   )
