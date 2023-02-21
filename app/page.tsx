@@ -18,7 +18,7 @@ export default function Home() {
 
   return (
     <main className='flex flex-col items-center justify-center bg-slate-50 min-h-screen w-screen pb-10'>
-      <div className='flex flex-col space-y-4 w-full px-5 md:px-20 lg:px-40'>
+      <div className='flex flex-col space-y-4 w-full px-5 md:px-20 lg:px-48'>
         <p className='font-bold text-black w-full text-base md:text-xl lg:text-2xl'>Tip Calculator</p>
         <input
         value={`${Number.isNaN(userInput) ? "" : userInput}`}
@@ -33,21 +33,21 @@ export default function Home() {
           onClick={()=>{
             selectRate(0.05)
           }}
-          className={`h-14 lg:h-20 w-full ${rate === 0.05 ? "bg-slate-400" : "bg-slate-600"} hover:bg-slate-400 hover:text-black text-white rounded text-xs md:text-base lg:text-lg`}>
+          className={`h-14 lg:h-20 w-full ${rate === 0.05 ? "bg-slate-400" : "bg-slate-600"} hover:bg-slate-400 hover:text-black text-white rounded text-xs md:text-base lg:text-lg drop-shadow-lg`}>
           5%
         </button>
         <button 
         onClick={()=>{
           selectRate(0.10)
         }}
-        className={`h-14 lg:h-20 w-full ${rate === 0.10 ? "bg-slate-400" : "bg-slate-600"} hover:bg-slate-400 hover:text-black text-white rounded text-xs md:text-base lg:text-lg`}>
+        className={`h-14 lg:h-20 w-full ${rate === 0.10 ? "bg-slate-400" : "bg-slate-600"} hover:bg-slate-400 hover:text-black text-white rounded text-xs md:text-base lg:text-lg drop-shadow-lg`}>
           10%
         </button>
         <button 
         onClick={()=>{
           selectRate(0.15)
         }}
-        className={`h-14 lg:h-20 w-full ${rate === 0.15 ? "bg-slate-400" : "bg-slate-600"} hover:bg-slate-400 hover:text-black text-white rounded text-xs md:text-base lg:text-lg`}>
+        className={`h-14 lg:h-20 w-full ${rate === 0.15 ? "bg-slate-400" : "bg-slate-600"} hover:bg-slate-400 hover:text-black text-white rounded text-xs md:text-base lg:text-lg drop-shadow-lg`}>
           15%
         </button>
       </div>
