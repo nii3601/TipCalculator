@@ -11,3 +11,5 @@ services:
     volumes:
       - .:/app
       - /app/node_modules
+    environment:
+      - TEST_ENV=TEST_ENV
