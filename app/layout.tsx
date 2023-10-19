@@ -21,7 +21,7 @@ export default function RootLayout({
       */}
       <head />
       <body>
-      <p>This is a test to see if env variables passed{process.env.TEST_ENV}</p>
+      {/* <p>This is a test to see if env variables passed{process.env.TEST_ENV}</p> */}
         {children}
         <footer className='flex flex-row items-center justify-center text-white bg-slate-900 py-4'>Made with NextJS by Jonathan Lamptey</footer>
       </body>
